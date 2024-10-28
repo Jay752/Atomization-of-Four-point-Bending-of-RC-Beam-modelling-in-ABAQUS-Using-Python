@@ -3,46 +3,43 @@ This project contains Python scripts for creating a 3D concrete beam model in Ab
 This project contains Python scripts for creating a 3D concrete beam model in Abaqus with reinforced plates, rebar, and stirrups, and setting up a dynamic analysis step. The model leverages Abaqus' Python API for geometry creation, material assignments, and assembly.
 
 Table of Contents
-Introduction
-Features
-Getting Started
-Usage
-Functions
-Contributing
-License
-Introduction
+  1. Introduction
+  2. Features
+  3. Getting Started
+  4. Usage
+  5. Functions
+  6. Contributing
+  7. License
+
+Introduction:
 This repository includes Python scripts to automate the creation of a concrete beam model with reinforcement in Abaqus. The model is customized with concrete properties, steel reinforcement, and configured for dynamic analysis. The scripts simplify tasks such as model initialization, geometry creation, material assignment, and instance patterning.
 
-Features
+Features:
 Define a 3D concrete beam with customizable dimensions.
 Automatically set up material properties for concrete and steel.
 Add plates at specific locations on the beam.
 Create and pattern reinforcement bars and stirrups.
 Set up an Explicit Dynamics Step for dynamic analysis.
 Automatically clean up instances after Boolean operations.
-Getting Started
+
+Getting Started:
 Prerequisites
-Abaqus: Ensure you have Abaqus CAE installed, as this script uses Abaqus’ Python API.
-Python: Scripts should be run within Abaqus' Python environment.
+  Abaqus: Ensure you have Abaqus CAE installed, as this script uses Abaqus’ Python API.
+  Python: Scripts should be run within Abaqus' Python environment.
 Installation
-Clone the repository:
+  1. Clone the repository:
+      git clone https://github.com/yourusername/ConcreteBeamAbaqus.git
+  2. Navigate to the project directory:
+      cd ConcreteBeamAbaqus
+3. Open the script in Abaqus and run it in Abaqus CAE's Python environment. (See the attached Video)
 
-bash
-Copy code
-git clone https://github.com/yourusername/ConcreteBeamAbaqus.git
-Navigate to the project directory:
-
-bash
-Copy code
-cd ConcreteBeamAbaqus
-Open the script in Abaqus and run it in Abaqus CAE's Python environment.
-
-Usage
+Usage:
 Initialize the Model: The script begins with model initialization using NameOfModel to set a name for the model.
 Define Geometry and Material Properties: Use beam_size and platesize functions to set up the geometry, including dimensions and material properties for concrete and steel plates.
 Define Reinforcements: Call total_bar_numbers with desired parameters to define bottom and top rebar, along with stirrups.
 Run Analysis: The script configures an explicit dynamics step for analysis. Execute the script within Abaqus to create the model, set materials, and run the analysis.
-Functions
+
+Functions:
 NameOfModel(Name='')
 Initializes a model in Abaqus with a specified name.
 Parameters:
@@ -90,10 +87,11 @@ platesize(plate_depth=10, plate_length=40, spacing_from_edge=30)
 
 # Add reinforcement bars and stirrups
 total_bar_numbers(2, 2, 12, 10, 8, 80, 50)
-Contributing
+
+Contributing:
 Contributions are welcome! Please fork the repository, make your changes, and submit a pull request.
 
-License
+License:
 This project is licensed under the MIT License.
 
 This documentation provides a complete overview of the repository, how to get started, and the function definitions. The setup is ready for GitHub, enabling users to understand and contribute effectively.
