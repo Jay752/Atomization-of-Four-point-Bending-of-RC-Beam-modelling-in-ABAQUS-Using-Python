@@ -100,3 +100,7 @@ This project is licensed under the MIT License.
 
 ## Closure
 This documentation provides a complete overview of the repository, how to get started, and the function definitions. The setup is ready for GitHub, enabling users to understand and contribute effectively.
+
+## Citation upon use of this repository
+Viradiya, Jaykumar, Gupta, Rishi, Dave, Urmil, “Analytical Evaluation of Load-Carrying capacity of Corroded RC beams”, CSCE June-2024 Annual Conference, Niagara, Ontario.
+
